@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+    .derechos {
+        font-family: "roboto", sans-serif;
+        color: whitesmoke;
+        margin: 10px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 0 8px 0 0;
+
+        a img {
+            width: 45px;
+            height: auto;
+            padding: 5px;
+        }
+    }
+}
+
+.blog-footer,
+.contacto-footer,
+.portfolio-footer,
+.sobre-mi-footer {
+    background-color: #192841;
+}
+
+

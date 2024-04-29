@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.blog-body {
+/* .blog-body {
     height: 100vh;
     width: 100vw;
 }
@@ -33,54 +33,6 @@ body {
 .blog-sobre-mi {
     height: 100vh;
     width: 100vw;
-}
-
-/* header {
-    font-family: 'roboto', sans-serif;
-    font-size: 20px;
-}
-
-
-
-header nav ul li {
-    display: inline;
-
-}
-
-
-header nav ul li a {
-    text-decoration: none;
-    color: whitesmoke;
-    padding: 50px;
-}
-
-
-nav ul li a:hover {
-    color: rgb(135, 167, 236);
-    transition: 0.5s;
-    text-decoration: dotted;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 30px;
-
-}
-
-
-
-.home a {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-.home a:hover {
-    text-decoration: dotted;
-    color: whitesmoke;
-    color: rgb(135, 167, 236);
-    transition: 0.5s;
 } */
 
 /*? NAV */
@@ -102,10 +54,31 @@ nav {
 
 /* PRESENTACION */
 
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+.foto-perfil img {
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid #0072ff;
+}
+
 .texto-principal {
     font-family: "roboto", sans-serif;
     color: whitesmoke;
     padding: 10px;
+}
+
+h1 {
+    font-family: "roboto", sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .texto-principal h1 {
@@ -125,12 +98,8 @@ nav {
     margin: 50px;
 }
 
-.presentacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 60px;
-}
+
+
 
 .textos-descripcion {
     font-family: "roboto", sans-serif;
@@ -152,11 +121,6 @@ nav {
     margin: 50px;
 }
 
-section .foto-perfil img {
-    width: 300px;
-    border-radius: 50%;
-    border: 10px solid #0072ff;
-}
 
 .habilidades-imgs {
     text-align: center;
@@ -194,6 +158,8 @@ section .foto-perfil img {
     box-shadow: 0px 6px 0px #0072ff;
 }
 
+/* Educación */
+
 .educacion h2 {
     font-family: "roboto", sans-serif;
     color: whitesmoke;
@@ -227,10 +193,13 @@ section .foto-perfil img {
     color: whitesmoke;
 }
 
-.imgs-carrousel img {
+/* .imgs-carrousel img {
     width: 100%;
     margin-top: 40px;
-}
+}  */
+
+
+/* Educación */
 
 /* PRESENTACION */
 
@@ -252,12 +221,10 @@ section .foto-perfil img {
 
 .floating-icon:hover {
     transform: scale(1.1);
-    /* Cambia el tamaño del icono cuando el mouse pasa sobre él */
 }
 
 .floating-icon img {
     width: 40px;
-    /* Cambia el tamaño del icono según tu preferencia */
     height: 40px;
 }
 
@@ -320,7 +287,7 @@ section .foto-perfil img {
 
 /* BLOG */
 
-/*! FORMULARIO */
+/*! FORMULARIO CONTACTO */
 
 .form h1 {
     font-family: "roboto", sans-serif;
@@ -382,7 +349,32 @@ textarea {
     display: block;
 }
 
-/*! FORMULARIO */
+/*! FORMULARIO CONTACTO */
+
+
+.textos-clientes{
+    margin: 20px;
+}
+
+.testimonial {
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px auto;
+}
+.testimonial p {
+    margin-bottom: 10px;
+}
+.testimonial-author {
+    font-style: italic;
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+
 
 /*? FOOTER */
 
@@ -495,13 +487,6 @@ footer ul li a img {
     margin: 20px;
 }
 
-h1 {
-    font-family: "roboto", sans-serif;
-    color: whitesmoke;
-    text-align: center;
-    margin: 10px;
-    border-bottom: 1px solid whitesmoke;
-}
 
 .grid-items-4 .img-4 {
     width: 100%;
@@ -650,4 +635,83 @@ h1 {
 }
 
 /*! RESPONSIVE GRID PORTFOLIO*/
+
+/*? MEDIA QUERIES BLOG */
+
+@media screen and (max-width: 746px) {
+    .blog-post {
+        margin: 10px;
+        
+    }
+}
+
+
+@media screen and (max-width: 698px) {
+    .blog-post {
+        margin: 2px;
+        
+    }
+}
+
+@media screen and (max-width: 681px) {
+    .blog-post {
+        display: flex;
+        align-items: center;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blog-post {
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .post-content{
+        text-align: center;
+        margin: 10px;
+    }
+
+
+}
+
+/*? MEDIA QUERIES BLOG */
+
+
+
+/* MEDIA QUERIES SOBRE MI */
+
+@media screen and (max-width: 400px) {
+    .textos-sobre-mi {
+        text-align: center;
+        margin: 20px;
+    }
+}
+
+/* MEDIA QUERIES SOBRE MI */
+
+
+/*! MEDIA QUERIES CONTACTO */
+
+@media screen and (max-width: 1030px) {
+    .testimonial p {
+        font-size: 15px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+
+    }
+
+@media screen and (max-width: 336px) {
+    .testimonial p {
+        font-size: 10px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+
+    }
+}
+}
+
+/*! MEDIA QUERIES CONTACTO */
 

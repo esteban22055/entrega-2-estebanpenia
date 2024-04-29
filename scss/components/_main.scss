@@ -1,0 +1,461 @@
+//!PRESENTACION INDEX
+
+.presentacion {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @extend %flex-center;
+    margin: 60px;
+
+    .foto-perfil {
+        img {
+            width: 300px;
+            border-radius: 50%;
+            border: 10px solid $color-principal;
+        }
+    }
+
+    .texto-principal {
+        font-family: "roboto", sans-serif;
+        color: $color-terciario;
+        padding: 10px;
+
+        h1 {
+            font-size: nth($font-size, 1);
+            font-family: "roboto", sans-serif;
+            color: whitesmoke;
+            text-align: center;
+            margin: 10px;
+            border-bottom: 1px solid whitesmoke;
+        }
+
+        h3 {
+            font-size: nth ($font-size, 3);
+            font-weight: normal;
+        }
+
+        p {
+            font-weight: lighter;
+        }
+
+    }
+
+    button {
+        margin: 50px;
+    }
+
+}
+
+.descripcion {
+    .textos-descripcion {
+        font-family: "roboto", sans-serif;
+        color: aliceblue;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+
+        h2 {
+            padding: 10px;
+            display: inline-block;
+            border-bottom: 1px solid whitesmoke;
+        }
+
+        p {
+            margin: 50px;
+        }
+    }
+
+    .habilidades-imgs {
+        text-align: center;
+        padding: 5px;
+
+        img {
+            width: 45px;
+            height: auto;
+            padding: 5px;
+            display: inline;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.educacion {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flex(flex, center, center);
+
+    h2 {
+        font-family: "roboto", sans-serif;
+        color: whitesmoke;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid whitesmoke;
+    }
+
+
+
+    .item {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+
+        img {
+            width: 60px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        p {
+            font-family: "roboto", sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: whitesmoke;
+        }
+    }
+}
+
+//!PRESENTACION INDEX
+
+
+// LOGOS PORTFOLIO
+
+.texto-portfolio {
+    font-family: "roboto", sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.grid-todo {
+    margin: 20px;
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        grid-template-areas:
+            "grid-items-1 grid-items-1 grid-items-1"
+            "grid-items-3 grid-items-2 grid-items-4";
+
+        .grid-items-1 {
+            grid-area: grid-items-1;
+
+            .img-1 {
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+                box-shadow: 1px 5px 8px -2px rgba(0, 0, 0, 0.36);
+                -webkit-box-shadow: 1px 5px 8px -2px rgba(0, 0, 0, 0.36);
+                -moz-box-shadow: 1px 5px 8px -2px rgba(0, 0, 0, 0.36);
+            }
+        }
+
+        .grid-items-2 {
+            grid-area: grid-items-2;
+
+            .img-2 {
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+            }
+        }
+
+        .grid-items-3 {
+            grid-area: grid-items-3;
+
+            .img-3 {
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+            }
+        }
+
+        .grid-items-4 {
+            grid-area: grid-items-4;
+
+            .img-4 {
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+                background-color: whitesmoke;
+            }
+        }
+    }
+}
+
+// LOGOS PORTFOLIO
+
+//! PORTFOLIO CONTENIDO
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+
+    header {
+        h1 {
+            font-family: "roboto", sans-serif;
+            color: whitesmoke;
+            text-align: center;
+            margin: 10px;
+            border-bottom: 1px solid $color-terciario;
+        }
+    }
+
+    .blog-post {
+        display: flex;
+        margin-bottom: 40px;
+
+        img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 20px;
+        }
+
+        .post-content {
+            flex: 1;
+
+            h2 {
+                margin-top: 0;
+                color: $color-terciario;
+            }
+
+            p {
+                line-height: 1.6;
+                color: $color-principal;
+                font-family: "roboto", sans-serif;
+            }
+        }
+    }
+}
+
+
+//! PORTFOLIO CONTENIDO
+
+//? ANIMACION FOTO PERFIL
+
+.foto-perfil {
+    position: relative;
+    display: inline-block;
+
+    img {
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(0.8);
+        }
+    }
+}
+
+
+//? ANIMACION FOTO PERFIL
+
+
+// VIDEO EXPLICATIVO
+
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+
+
+// VIDEO EXPLICATIVO
+
+
+
+
+
+
+//! SOBRE MI
+
+.textos-sobre-mi {
+    margin: 60px;
+
+
+
+    h1,
+    h2,
+    p {
+        font-family: "roboto", sans-serif;
+    }
+
+    h2 {
+        color: $color-principal;
+        border-bottom: 1px solid $color-terciario;
+    }
+
+    p {
+        color: $color-terciario;
+
+    }
+}
+
+//! SOBRE MI
+
+
+// FORM COMENTARIOS SOBRE MI
+
+.formulario {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .campo {
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    }
+
+    .boton {
+        text-align: center;
+
+        button {
+            padding: 10px 20px;
+            background-color: $color-principal;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-principal;
+            }
+        }
+    }
+}
+
+
+// FORM COMENTARIOS SOBRE MI
+
+
+//? FORMULARIO CONTACTO
+
+.form {
+    h1 {
+        font-family: "roboto", sans-serif;
+        color: whitesmoke;
+        border-bottom: 1px solid whitesmoke;
+        text-align: center;
+        margin: 20px;
+    }
+
+    form {
+        font-family: "roboto", sans-serif;
+        width: 300px;
+        padding: 16px;
+        border-radius: 10px;
+        margin: auto;
+        background-color: $form-background-color;
+
+        label {
+            width: 72px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 180px;
+            padding: 3px 10px;
+            border: 1px solid $form-border-color;
+            border-radius: 3px;
+            background-color: $form-border-color;
+            margin: 8px 0;
+            display: inline-block;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 8px 16px;
+            margin-top: 32px;
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+            display: block;
+            color: #fff;
+            background-color: $form-button-color;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            border: 1px solid $form-border-color;
+            border-radius: 3px;
+            background-color: $form-border-color;
+            margin: 8px 0;
+            resize: none;
+            display: block;
+        }
+    }
+}
+
+//? FORMULARIO CONTACTO
+
+
+//! CLIENTES CONTACTO
+
+
+
+.textos-clientes {
+    margin: 20px;
+
+    .testimonial {
+        display: flex;
+        background-color: whitesmoke;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin: 20px auto;
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        &-author {
+            font-style: italic;
+            text-align: right;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+
+
+//! CLIENTES CONTACTO
+

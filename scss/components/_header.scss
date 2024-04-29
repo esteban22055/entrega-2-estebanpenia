@@ -1,0 +1,20 @@
+.navbar {
+    &.navbar-expand-lg {
+        &.nav-bar-color {
+            background-color: #911ee9;
+        }
+
+        .navbar-brand {
+            color: white;
+        }
+
+        .nav-link {
+
+            &:focus,
+            &:hover {
+                color: whitesmoke;
+            }
+        }
+    }
+}
+

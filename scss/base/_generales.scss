@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(189, 56, 242), #192841);
+    background-repeat: no-repeat;
+}
+
+.blog-body,
+.blog-contacto,
+.blog-portfolio,
+.blog-sobre-mi {
+    height: 100%;
+    width: 100%;
+}
+
+//! BOTON
+
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #9f14e9, #0072ff);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 4px 0px #0072ff;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 6px 0px #0072ff;
+    }
+}
+
+//! BOTON
+
+// FLOATING ICON
+
+.floating-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+// FLOATING ICON
+
+//! MIXINS
+
+@mixin flex($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    // flex-direction: $direction;
+}
+
+//! MIXINS
+
+
+//? EXTENDS
+
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//? EXTENDS
+
+// LISTAS
+
+$font-size:(
+    50px,
+    32px,
+    28px,
+    16px,
+);
+
+
+// LISTAS
